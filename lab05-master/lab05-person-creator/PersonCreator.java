@@ -27,31 +27,52 @@
    //DOB of the person
    private String DOB;
      
-     //this makes the person and allows you to input your choice of first and last name
+     /*this makes the person and allows you to input your choice of first and last name
+        the input is String
+        Pet( String PetName)*/
    public void PersonCreator( String firstname, String lastname){
          name=firstname+" "+lastname;
    }
-     // This allow the user to set a name
+     /* This allow the user to set a name
+        input is String
+        Month(String MonthName)*/
    public void setName(String newName){
          name=newName;
    }
-     // Allow the user to set the age of the person
+     /* Allow the user to set the age of the person
+      *  input is int
+      *  FavNum( int num)
+      */
    public void setAge( int newAge) {
          age=newAge;
    }
-     //Allow user to define the person's sex
+     /*Allow user to define the person's sex
+      * input is String
+      * Date( String Date)
+      */
    public void setSex( String newSex) { 
          sex=newSex;
    }
-     //Allows user to input height
+     /*Allows user to input height
+      * input is int
+      *  year( int year)
+      */
    public void setHeight( int newHeight) {
          height=newHeight;
    }
-     // allow user to input weight
+     /* allow user to input weight
+      *  input is  int
+      * strength( int strength)
+      */
    public void setWeight( int newWeight) {
          weight=newWeight;
    }
-     //allows user to input s
+     /*allows user to input SSN
+      *  input is string
+      *  Color( String ColorName
+      */
+    
+     
    public void setSSN(String newSSN) {
          SSN=newSSN;
          if (first<=100&&first>=999){
@@ -62,9 +83,17 @@
              }
           } 
    }
+   /* this allows the user to input the  address
+    *  the input is String
+    *  friend( String friendName)
+    */
    public void setAddress(String newaddress) {
          address=newaddress;
    }
+   /* ALlows user to set phonenumber
+    * input is String
+    * Student( String StudentName)
+    */
    public void setPhoneNum(String newphoneNum) {
          phoneNum=newphoneNum;
          if(first<=100&&first>=999){
@@ -75,9 +104,17 @@
              }
          }
   }
-  public void setDOB( String newDOB){
+  /*allows the user to input the date of birth
+   * Input is String
+   *  Gem( String GemName)
+   */
+    public void setDOB( String newDOB){
       DOB=newDOB;
   }
+  /* this prints out the info of object on class PersonCreator
+   * Input is String
+   * house( String houseName
+   */
   public void printPerson()
   {
       System.out.println(name);
